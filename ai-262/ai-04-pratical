@@ -24,7 +24,7 @@ Note: If you deleted workbenches, the project and pvc will not get delete. you c
   - Go to the DS project > Data Connection > Add data connection > fill the details > Add data connection.
   - Go to the DS project > create workbenche > use an existing data connect.
 
-  - Clone the git code and execute the nodebook file.
+  - Clone the git code and execute the notebook file on jupyter lab.
 
 
 
