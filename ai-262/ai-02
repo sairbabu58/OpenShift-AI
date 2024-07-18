@@ -20,3 +20,23 @@ Data Connections:
 In RHOAI, a data connection is a set of configuration parameters for connecting workbenches to S3-compatible storage services. When you 
 associate a data connection to a workbench, RHOAI injects the values of the data connection as environment variables into the workbench.
 
+Data Science Pipelines:
+In RHOAI, a data science pipeline is a workflow that executes scripts or Jupyter notebooks in an automated way. Data Science Pipelines are 
+a key feature in an AI project, considering the experimental nature of data science and machine learning. Pipelines can help data scientists 
+operationalize the execution of their experiments and organize the results. For example, a typical pipeline might automate an experiment 
+run by gathering data, cleaning data, training a model, evaluating the model, and uploading the model and its evaluation report to S3.
+
+Model:
+An AI model, machine learning model, or just model is the main artifact that results from the training phase of a machine learning workflow.
+Each data science or ML framework uses its own format to export models. An exported model is typically saved as one or multiple files. 
+In most cases, you must use the same framework for both training and using the model. Often, developers also need an HTTP API, or similar, 
+to expose the model to the general public.
+
+Model Serving:
+In RHOAI, a model server is a component that automatically deploys models. The model server uses a data connection to download the model 
+files from an S3 model store. After downloading the model server files into the container, the model server exposes the model via standard 
+REST or gRPC APIs. These APIs are often called inference APIs as they provide the inferences captured in the model.
+
+RHOAI uses KServe as the Model Serving platform, and supports model runtimes such as OpenVINO, Triton, 
+Text Generation Inference Server (TGIS) and Caikit.
+
