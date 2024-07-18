@@ -1,0 +1,8 @@
+Architecture of Red Hat OpenShift AI:
+
+
+1) Under layer server: (Virtual, BareMetal, Private and Public Cloud)
+2) CPU type: (Intal NVIDIA)
+3) OpenShift Container Platform:
+4) ODF for storage and object storage
+5) Operators: (RH OpenShift AI operator, NVIDIA GUP operator, RH OpenShift Pipeline operator, Service Mesh, Serverless operator ..etc)
