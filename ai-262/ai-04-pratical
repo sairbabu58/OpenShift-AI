@@ -5,8 +5,6 @@ Name:                   project-ds
 Created:                2 hours ago
 Labels:                 kubernetes.io/metadata.name=project-ds
                         opendatahub.io/dashboard=true
-
-
 ...
 
 2) Create workbenches: 
@@ -16,6 +14,19 @@ Labels:                 kubernetes.io/metadata.name=project-ds
   - Start and stop workbenches
 
 Note: If you deleted workbenches, the project and pvc will not get delete. you can use it to create a new workbenche.
+
+...
+
+3) OpenShift AI Data Connection
+  - Require s3 bucket to be configured. (Here configured MINIO as a object bucket)
+  - Create a object bucket from MINIO web-ui or ODF storage
+  - Get the credentials details
+  - Go to the DS project > Data Connection > Add data connection > fill the details > Add data connection.
+  - Go to the DS project > create workbenche > use an existing data connect.
+
+  - Clone the git code and execute the nodebook file.
+
+
 
 
 
