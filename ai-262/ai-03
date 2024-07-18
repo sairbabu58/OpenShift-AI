@@ -1,0 +1,30 @@
+Data Science Project Components:
+
+A data science project can include the following components
+- Workbenches
+- Cluster storage
+- Data connections
+- Pipelines
+- Models and Model servers
+
+...
+
+Data Science Project yaml:
+
+ IMP: (opendatahub.io/dashboard: 'true' )
+
+kind: Project                             1
+apiVersion: project.openshift.io/v1
+metadata:
+  name: my-ai-project                     2
+  labels:
+    kubernetes.io/metadata.name: my-ai-project
+    modelmesh-enabled: 'true'
+    opendatahub.io/dashboard: 'true'     3
+    ...output omitted...
+
+...
+
+
+
+
