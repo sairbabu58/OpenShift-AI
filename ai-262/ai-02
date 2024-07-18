@@ -40,3 +40,23 @@ REST or gRPC APIs. These APIs are often called inference APIs as they provide th
 RHOAI uses KServe as the Model Serving platform, and supports model runtimes such as OpenVINO, Triton, 
 Text Generation Inference Server (TGIS) and Caikit.
 
+Model Monitoring:
+Administrations and engineers might want to observe Prometheus metrics such as the CPU or memory use of your model server. 
+Data scientists can inspect potential drifts in the predictions and decisions of the deployed models.
+
+
+
+
+
+
+More details, please follow the AI-262 book.
+
+- Ingest data
+- Preprocess and explore data
+- Train model
+- Evaluate model
+- Export and upload model
+- Pipeline execution
+- Serve model
+- Monitor model
+- Develop and deploy applications
