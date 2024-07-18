@@ -1,0 +1,30 @@
+Data Science: (DS)
+
+Data science challenges range from capturing and gathering data, to querying, describing, analyzing and visualizing the data to extract 
+knowledge and answer questions. Being such a diverse field, data science integrates techniques from many other areas, such as algebra, 
+calculus, statistics, probability, data and software engineering, and Big Data.
+
+...
+
+Machine Learning: (ML)
+
+Machine Learning (ML) is a subset of data science that aims to train computers to learn patterns from data and produce generalized responses.
+These trained, intelligent systems are called ML models, or models. In general terms, an ML model is a mathematical function that takes a 
+set of inputs and produces an output. When you train a model, you are in fact applying an algorithm that learns the operations that this 
+function must compute to produce the desired output. The function learns these operations by using the patterns discovered in the training 
+data set.
+
+Generalization is one of the most important features of ML models, and refers to the ability of a model to produce satisfactory responses 
+on unseen data. For example, assume that you train a model to recognize cats by using a training data set of 1000 images. You can consider
+that the model generalizes well if it detects cats that were not initially included in the initial 1000 training images.
+
+The ML techniques are diverse and suitable for different purposes.
+
+- Traditional ML techniques provide best results in structured data, such as tabular data sets. These methods are suitable for predicting 
+  numerical values, categorizing, or segmenting data automatically. For example, you can apply these techniques to predict house pricing.
+- Deep learning techniques are powerful and provide best results in artificial cognition and generation, typically by using unstructured 
+  data such as text, audio, and images.
+- Reinforcement Learning (RL) is arguably more specialized, and not always considered a DS technique. Rather than using existing data for 
+  training, RL simulates actions and outcomes for learning. A notable example of the use of Reinforcement Learning is training models 
+  to play video games or classic strategy games, such as Chess and Go.
+
