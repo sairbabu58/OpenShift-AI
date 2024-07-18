@@ -28,3 +28,61 @@ The ML techniques are diverse and suitable for different purposes.
   training, RL simulates actions and outcomes for learning. A notable example of the use of Reinforcement Learning is training models 
   to play video games or classic strategy games, such as Chess and Go.
 
+...
+
+Deep Learning: (DL)
+
+Deep Learning (DL) is a type of machine learning, characterized by the use of large neural networks. A Neural Network is an ML model used 
+to learn complex patterns in data, by using an architecture inspired in biological neurons.
+
+Research on deep learning and its use in generative and cognitive AI has been particularly prolific in the last decade. These methods have 
+proven to be effective with unstructured data, such as text, images, sound, or videos. Examples of deep learning are artificial vision, speech recognition, and natural language processing. The latest trends in DL include techniques such as Diffusion Models and Large Language Models (LLMs), which are capable of generating multimedia content, as well as producing well structured text narratives, writing code, and maintaining coherent conversations.
+
+One downside of deep learning models is their size and complexity. These models typically need large data sets for training, and have 
+high memory and compute requirements. The use of Graphical Processing Units (GPU) is common in deep learning to speed up computations.
+
+...
+
+Red Hat OpenShift AI:
+
+One of the main difficulties that AI projects face is the gap between data science and engineering. Engineering and operations teams 
+are not always familiar with the complexities of AI, data science, and machine learning. Likewise, data scientists sometimes lack the 
+engineering resources and expertise to build, deploy, and monitor models in modern cloud environments.
+
+Machine learning operations (MLOps) help organizations solve this challenge. MLOps is inspired by DevOps principles and brings many of 
+the benefits of DevOps to AI projects, streamlining the whole lifecycle of ML models.
+
+Red Hat OpenShift AI (RHOAI) is a platform for data scientists, AI practitioners, developers, machine learning engineers, and operations 
+teams to prototype, build, deploy, and monitor AI models. By using an MLOps perspective, RHOAI helps teams overcome key challenges:
+
+...
+
+RHOAI Key Features:
+
+RHOAI turns Red Hat OpenShift into a full-fledged AI platform, which includes the common tools and features that the AI ecosystem requires. 
+The following features are some key capabilities of RHOAI:
+
+Jupyter notebooks:
+Arguably one of the most popular tools for data science, research, and experimentation. Jupyter Notebooks provide interactive and executable 
+live documents and shells on the web browser. A notebook can contain executable code, rich text, and multimedia content.
+
+Portable working environments:
+Each working environment is available as a container image. Users can create these environments based on the specific container image 
+that they need. RHOAI provides preconfigured images, but users can create custom ones.
+
+GPU-ready environments:
+RHOAI provides stable working environments that are preconfigured for Compute Unified Device Architecture (CUDA) and NVIDIA GPUs, 
+which are typically required for deep learning.
+
+Cloud-first Model Serving:
+RHOAI ships with model servers, such as OpenVino, which enable users to serve their models right after training them, without having 
+to develop specific servers or APIs.
+
+Pipelines:
+Users can automate the typical ML workflows of data gathering, model training, evaluation, and deployment, instead of performing these 
+tasks manually.
+
+Model monitoring:
+You can monitor the performance of AI models in production with Prometheus and Grafana dashboards.
+
+
