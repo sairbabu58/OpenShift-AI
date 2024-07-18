@@ -1,0 +1,22 @@
+Workbenches:
+In RHOAI, a workbench is a containerized, cloud-native working environment for data scientists. Workbenches run as OpenShift pods 
+and are designed for machine learning and data science. To this end, workbenches include the JupyterLab notebook execution environment, 
+standard data science libraries, such as TensorFlow, and GPU acceleration capabilities, among other features. RHOAI ships with preconfigured 
+workbench images, which provide data scientists with stable working environments with little setup. The implementation of workbenches 
+relies on the Kubeflow upstream project.
+
+Workbench images:
+A workbench image is a container image that RHOAI uses to create workbenches. RHOAI includes a number of images ready to use for multiple 
+common data science stacks. Each image contains a different set of libraries and versions. Minimal Python, Standard Data Science, PyTorch, 
+and TensorFlow are examples of default images included in RHOAI.
+
+Cluster storage
+Workbenches run as containers, and containers are designed to be stateless. However, users must be able to retain their work after 
+logging out or if the workbench restarts. To make workbenches stateful, RHOAI uses cluster storage, which is a Persistent Volume Claim (PVC) 
+mounted in a specific directory of the workbench container. Every workbench includes, at least, one cluster storage mounted in the root 
+directory of the workbench.
+
+Data Connections:
+In RHOAI, a data connection is a set of configuration parameters for connecting workbenches to S3-compatible storage services. When you 
+associate a data connection to a workbench, RHOAI injects the values of the data connection as environment variables into the workbench.
+
