@@ -1,1 +1,23 @@
+1) Create and delete datascience project from OpenShift AI dashboard
+
+[student@workstation ~]$ oc describe project project-ds
+Name:                   project-ds
+Created:                2 hours ago
+Labels:                 kubernetes.io/metadata.name=project-ds
+                        opendatahub.io/dashboard=true
+
+
+...
+
+2) Create workbenches: 
+  - Create new workbenches inside of NS
+  - Delete workbenches from NS
+  - Edit workbenches (Change the base image and size)
+  - Start and stop workbenches
+
+Note: If you deleted workbenches, the project and pvc will not get delete. you can use it to create a new workbenche.
+
+
+
+
 
