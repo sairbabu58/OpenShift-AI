@@ -26,6 +26,19 @@ Note: If you deleted workbenches, the project and pvc will not get delete. you c
 
   - Clone the git code and execute the notebook file on jupyter lab.
 
+...
+
+4) Jupyter Notebook
+  - Create a notebook (Clone the git code > right click on the white field > create file)
+  - Execute the notebook 
+  - Correct the shell, index and etc
+  - Clone the git multiple repo
+  - Add new notebook file
+  - Track it from jupyter project
+  - Commit and push it 
+  - Resolving a merge conflict
+  - Create branch 
+  - Merge the branch 
 
 
 
