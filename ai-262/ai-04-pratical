@@ -1,3 +1,9 @@
+- Datascience project creation
+- Create a workbenche
+- RHOAI data connection object storage
+- Jupyter notebook expleror
+
+
 1) Create and delete datascience project from OpenShift AI dashboard
 
 [student@workstation ~]$ oc describe project project-ds
