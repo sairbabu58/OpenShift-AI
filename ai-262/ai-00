@@ -6,7 +6,6 @@ in two different deployment options:
 - As a managed cloud service running on Red Hat OpenShift Dedicated, or Red Hat OpenShift Service on AWS (ROSA).
 
 
-
 Data Science: (DS)
 
 Data science challenges range from capturing and gathering data, to querying, describing, analyzing and visualizing the data to extract 
