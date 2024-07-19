@@ -44,6 +44,8 @@ RHOAI Installation
 4) Click the DataScienceCluster Instance and validate the status if any error. (Ex: Serverless-operator is not installed)
 5) Go ahead and install serverless operator to fix the issues.
 6) Validate the DSC status again.
+7) From openshift web-ui > 9 dots > get the RHOAI web-ui
+
 
 ...
 
