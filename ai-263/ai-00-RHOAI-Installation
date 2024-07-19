@@ -13,10 +13,26 @@ the references section.
 
 
 Red Hat OpenShift AI Installation Operators:
-- RHOAI operator
+
 - NVIDIA GPU operators 
 - Node Feature Discovery operators
 - Red Hat OpenShift Pipelines operator
 - Red Hat OpenShift Serverless 
 - OpenShift Service Mesh operators
+- RHOAI operator (Install this operator after installed all the above operator. 
+                   or if you installed 1st then dont create DSC before installed all above operators)
+
+
+RHOAI Requirements:
+- A product subscription to RHOAI Self-Managed.
+- Access to a RHOCP cluster in version 4.12 or later, with cluster-admin privileges.
+- Two worker nodes with at least 8 CPUs and 32 GiB of RAM available for the RHOAI operator.
+- A default storage class with at least ReadWriteOnce (RWO) mode. RHOAI uses the OpenShift default storage class for dynamically 
+  provisioning persistent volumes for resources such as workbenches.
+- An identity provider. RHOAI uses the same identity provider as the OpenShift cluster.
+- All the operators that your installation needs. As explained previously, if you plan to use some RHOAI features, then you must 
+  install the operators before installing the RHOAI operator. 
+
+
+
 
