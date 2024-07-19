@@ -1,3 +1,12 @@
+You can install Open Data Hub, which is the upstream project of Red Hat OpenShift AI (RHOAI), on any OpenShift deployment option. Red Hat 
+offers a enterprise-grade supported Red Hat OpenShift AI (RHOAI) service, based on Open Data Hub, 
+in two different deployment options:
+ 
+- As a self-managed service running on Red Hat OpenShift Container Platform (RHOCP).
+- As a managed cloud service running on Red Hat OpenShift Dedicated, or Red Hat OpenShift Service on AWS (ROSA).
+
+
+
 Data Science: (DS)
 
 Data science challenges range from capturing and gathering data, to querying, describing, analyzing and visualizing the data to extract 
