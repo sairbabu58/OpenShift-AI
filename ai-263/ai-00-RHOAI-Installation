@@ -87,6 +87,10 @@ NAME          AGE
 default-dsc   12m
 [student@workstation ~]$ 
 
+udent@workstation ~]$  oc get odhdashboardconfigs
+NAME                   AGE
+odh-dashboard-config   32m
+[student@workstation ~]$ 
 ...
 
 
