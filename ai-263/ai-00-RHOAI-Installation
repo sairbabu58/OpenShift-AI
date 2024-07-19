@@ -33,6 +33,64 @@ RHOAI Requirements:
 - All the operators that your installation needs. As explained previously, if you plan to use some RHOAI features, then you must 
   install the operators before installing the RHOAI operator. 
 
+....
+
+
+RHOAI Installation
+
+1) Install all above required operaters
+2) Install RHOAI operator
+3) Create DataScienceCluster instance (Go with default values. But you can enable/disable the pluging by modifying Removed/Managed)
+4) Click the DataScienceCluster Instance and validate the status if any error. (Ex: Serverless-operator is not installed)
+5) Go ahead and install serverless operator to fix the issues.
+6) Validate the DSC status again.
+
+...
+
+$ oc get projects | grep redhat-ods
+    redhat-ods-applications
+    redhat-ods-monitoring
+    redhat-ods-operator
+    rhods-notebooks
+
+$ student@workstation ~]$ oc get po -n redhat-ods-applications
+NAME                                                              READY   STATUS      RESTARTS   AGE
+data-science-pipelines-operator-controller-manager-57d4f99g9d47   1/1     Running     0          8m44s
+etcd-65c8cb4797-qrk69                                             1/1     Running     0          8m51s
+kserve-controller-manager-b8f5668fc-86njk                         1/1     Running     0          4m15s
+modelmesh-controller-775fc44846-kjv4s                             1/1     Running     0          8m50s
+modelmesh-controller-775fc44846-mht2z                             1/1     Running     0          8m50s
+modelmesh-controller-775fc44846-rdxr6                             1/1     Running     0          8m50s
+notebook-controller-deployment-6d8bbd5d95-qm98b                   1/1     Running     0          9m
+odh-model-controller-5967774cbf-5bvcw                             1/1     Running     0          8m46s
+odh-model-controller-5967774cbf-vlx8f                             1/1     Running     0          8m46s
+odh-model-controller-5967774cbf-zkmpx                             1/1     Running     0          8m46s
+odh-notebook-controller-manager-79f4b476bf-wm6zj                  1/1     Running     0          8m16s
+remove-deprecated-monitoring-4p8zx                                0/1     Completed   0          8m46s
+rhods-dashboard-76f9749cbd-dqvlc                                  2/2     Running     0          9m12s
+rhods-dashboard-76f9749cbd-mws85                                  2/2     Running     0          9m12s
+rhods-dashboard-76f9749cbd-pjnqj                                  2/2     Running     0          9m12s
+rhods-dashboard-76f9749cbd-w2jsb                                  2/2     Running     0          9m12s
+rhods-dashboard-76f9749cbd-wrrlp                                  2/2     Running     0          9m12s
+[student@workstation ~]$ 
+
+
+$ student@workstation ~]$ oc get po -n redhat-ods-operator
+NAME                              READY   STATUS    RESTARTS   AGE
+rhods-operator-7d8cf48798-k4bzt   1/1     Running   0          16m
+[student@workstation ~]$
+
+$ student@workstation ~]$ oc get dsc
+NAME          AGE
+default-dsc   12m
+[student@workstation ~]$ 
+
+...
+
+
+
+
+
 
 
 
