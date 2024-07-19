@@ -10,3 +10,13 @@ Red Hat offers a enterprise-grade supported Red Hat OpenShift AI (RHOAI) service
 If you use the RHOAI managed cloud service, then you do not need to perform the RHOAI components installation. This course focuses on the 
 RHOAI self-managed platform. To learn more about the RHOAI cloud service, see the Red Hat OpenShift AI Service Definition article in 
 the references section.
+
+
+Red Hat OpenShift AI Installation Operators:
+- RHOAI operator
+- NVIDIA GPU operators 
+- Node Feature Discovery operators
+- Red Hat OpenShift Pipelines operator
+- Red Hat OpenShift Serverless 
+- OpenShift Service Mesh operators
+
