@@ -26,7 +26,16 @@ metadata:
     allowedGroups: system:authenticated
   ...output omitted...
 
+Note: add users to group rhods-admins to get admin access for RHOAI console
+      or 
+  > create a group. any name rhoai-admin
+  > Add users to that group
+  > Go to RHOAI console > setting > User Management > add above group > save
+
 
 3) Assign the permission to RHOAI 
   - RHOAI console > Data Science Project > Choose your project > ... this option  > Edit permission > Add user or grouo > ok 
-
+  or 
+  > create a group. any name rhoai-project-admin
+  > Add users to that group
+  > Go to RHOAI console > DS Project > click project name > ... edit > add the group name > give the edit or admin permission > ok
