@@ -2,7 +2,7 @@
 
 - Assign the permission to RHOAI dashboard and projects
 
-- Edit the cluster setting (Image size for allocated cpu and memory, Notebook Idel time, PVC size and etc)
+- Edit the cluster setting (Image size for allocated cpu and memory and add new size, Notebook Idel time, PVC size and etc)
 
 
 
@@ -50,8 +50,10 @@ Note: add users to group rhods-admins to get admin access for RHOAI console
 
 4) Edit the cluster setting (Image size for allocated cpu and memory, Notebook Idel time, PVC size and etc)
 
-- Image size configuration
- $ oc edit OdhDashboardConfig
+- Image size configuration and add new image size
+ $ oc edit OdhDashboardConfig 
+   . update the existing size 
+   . Create new size MediumBig (Copy the existing format and update the values)
 
 - PVC size configuration
   > RHOAI > Cluster Setting > PVC Size
