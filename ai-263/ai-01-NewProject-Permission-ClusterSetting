@@ -44,3 +44,20 @@ Note: add users to group rhods-admins to get admin access for RHOAI console
   > create a group. any name rhoai-project-admin
   > Add users to that group
   > Go to RHOAI console > DS Project > click project name > ... edit > add the group name > give the edit or admin permission > ok
+
+
+...
+
+4) Edit the cluster setting (Image size for allocated cpu and memory, Notebook Idel time, PVC size and etc)
+
+- Image size configuration
+ $ oc edit OdhDashboardConfig
+
+- PVC size configuration
+  > RHOAI > Cluster Setting > PVC Size
+
+-  NoteBook idel time
+  > RHOAI > Cluster Setting > Stop Idel NoteBooks
+  $ oc get cm/notebook-controller-config   -oyaml 
+
+
