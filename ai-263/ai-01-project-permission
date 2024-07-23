@@ -1,5 +1,10 @@
-Create a DS project 
-Assign the permission to RHOAI dashboard and projects
+- Create a DS project 
+
+- Assign the permission to RHOAI dashboard and projects
+
+- Edit the cluster setting (Image size for allocated cpu and memory, Notebook Idel time, PVC size and etc)
+
+
 
 
 1) Create a DS project 
