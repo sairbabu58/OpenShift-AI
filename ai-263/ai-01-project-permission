@@ -1,1 +1,32 @@
+Create a DS project 
+Assign the permission to RHOAI dashboard and projects
+
+
+1) Create a DS project 
+  - From RHOAI dashboard you can create a DS project 
+  - $ oc new-project test
+  - $ oc label namespace test opendatahub.io/dashboard='true' modelmesh-enabled='true'
+  - using yaml file.
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: myproject
+  labels:
+    modelmesh-enabled: 'true'
+    opendatahub.io/dashboard: 'true'
+
+
+
+2) Assign the permission to RHOAI 
+  - $ oc get OdhDashboardConfig -oyaml
+  spec:
+  ...output omitted...
+  groupsConfig: 2
+    adminGroups: rhods-admins
+    allowedGroups: system:authenticated
+  ...output omitted...
+
+
+3) Assign the permission to RHOAI 
+  - RHOAI console > Data Science Project > Choose your project > ... this option  > Edit permission > Add user or grouo > ok 
 
