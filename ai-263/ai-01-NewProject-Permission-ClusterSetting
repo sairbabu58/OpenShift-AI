@@ -2,7 +2,7 @@
 
 - Assign the permission to RHOAI dashboard and projects
 
-- Edit the cluster setting (Image size for allocated cpu and memory and add new size, Notebook Idel time, PVC size and etc)
+- Edit the AI cluster setting (Image size for allocated cpu and memory and add new size, Notebook Idel time, PVC size and etc)
 
 
 
