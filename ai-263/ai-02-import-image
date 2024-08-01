@@ -50,6 +50,15 @@ $ podman build . -t registry.ocp4.example.com:8443/student/custom-workbench:1.0
 
 $ podman push registry.ocp4.example.com:8443/student/custom-workbench:1.0
 
+>  Login to AI Console > Notebook Image > fill the details > packages > add > seaborn 0.12.2 > 
+> import it 
+> Login to AI Console > Data Science Project > Choose project > Create workbench > fill the details (Note: choose your custom image as a notebook image)
+
+
+
+
+
+
 
 
 
