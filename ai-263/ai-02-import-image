@@ -1,1 +1,22 @@
+- Create and Import a Custom Notebook Image
+- Import image from QUAY.IO registry.
 
+RHOAI base images: https://quay.io/modh
+
+OpenDataHub (ODH) base images: https://quay.io/opendatahub/workbench-images
+
+ODH community contributed images: https://quay.io/opendatahub-contrib/workbench-images
+
+....
+
+1) Import image from QUAY.IO registry
+
+- Login to this repo https://quay.io/opendatahub/workbench-images
+- Choose image > Click download icon (fetch tag) > select podman pull > copy the url path 'quay.io/opendatahub/workbench-images:jupyter-trustyai-ubi9-python-3.9-pr-646'
+- Login to AI Console > Setting > Notebook Image > Import New Image 
+                                                                > Image location: quay.io/opendatahub/workbench-images:jupyter-trustyai-ubi9-python-3.9-pr-646
+                                                                > Name: custom-image
+                                                                > Import
+- $ oc get is -A | grep custom-image
+- Login to AI Console > Data Science Project > Choose project > Create workbench > fill the details (Note: choose your custom image as a notebook image)
+                                                                      
