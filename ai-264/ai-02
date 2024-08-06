@@ -1,4 +1,7 @@
 - Gather data, Create some codes and train to ML for further  Analyzed.
 - Execture the python code from work beanch terminal.
-- Execute and add additional python packages if any thing is missing $ pip install abc==2.0.2
-- If git code is not relete to python, then import new image based on the core/kernel and create new WB and execute the code
+- Execute and add additional python packages if any thing is missing ( %pip install abc==2.0.2). execute the script
+- If the git code is not  releted to python, then import new image based on the code/kernel and create a new WB and execute the code.
+
+- Options to restart kernel  (Restart Icon)
+- Option to clean the error logs (Right click > clear all outout)
