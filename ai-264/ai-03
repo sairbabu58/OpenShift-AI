@@ -12,5 +12,52 @@ Inspecting Workbench Resources ( DS project > Work Beanch > Jupyter node book > 
 
 .......
 
+Scaling Data Loading: 
+Run AI/ML it is require high number of CPU and Memory based on your activity and data.
+To manage it, we need to follow some process.
+
+  -  Offline or Batch Learning: (It will take more cpu and memory, cause all the data will 1st load to your memory)
+With offline learning, you train the model by using all data, minus the data set aside for validation, at the same time. 
+Thus, all training data must fit into system memory. This creates a hard constraint on the amount of data you can provide your model.
+
+Additionally, if you integrate new data into the model, then you must rebuild the entire model from all of the data. Depending on how 
+often your organization needs to incorporate new data, rebuilding the entire model can require a lot of retraining time and resource usage. 
+In particular, main memory can become a constraint as the data set grows.
+
+  - Online or Out-of-core Learning: (Less cpu and memory, cause it will not load all the date to your memory. it will load subset of the data, called a chunk based on your requiredment)
+With online learning, you train the model in multiple passes. You use only a subset of the data, called a chunk, or a batch, during each pass. 
+Some data should still be set aside for validation, with the split occurring on each new chunk.
+
+Over time, models trained on constantly changing data incur more model rot or data drift, which is how out of date the model is from the 
+real-world environment. Because you can feed an online model with new data continuously, the model can adapt to changing situations and 
+environments without needing to completely retrain the entire model.
+
+However, this means that the model is also more susceptible to bad data. With an online learning strategy, you must exercise increased 
+caution around the training data. Additionally, developing an online learning model can be more challenging for data scientists.
+
+Generally, it would be best to favor an offline learning strategy unless you hit its constraints, such as not having enough memory or 
+needing to adapt to new data faster.
+
+
+  - Incrementally Training with Scikit-learn: 
+As suggested, online learning requires training the model in an incremental fashion, as opposed to all at the same time.
+
+To incrementally train by using Scikit-learn, in place of calling the fit method on the model, you call the partial_fit method within a loop.
+Within each iteration, before calling the function, you perform the usual data split: one part for training and another for model validation.
+Then, the call to the partial fit method adapts the model based on the portion of data provided.
+
+To update the model as new data arrives, you continue to call the partial fit method.
+
+
+  - Batches in Deep Learning:
+If you use deep learning techniques, then you probably need to split your data into chunks. The size and large data requirements of deep 
+learning models typically implies the use of incremental learning to make the models and the data fit in memory.
+
+Data scientists usually design deep learning training loops to iterate over data chunks, which are typically called batches in deep 
+learning scenarios. In fact, libraries such as TensorFlow and PyTorch offer routines and properties to quickly configure batches and 
+batch sizes.
+
+
+
 
 
