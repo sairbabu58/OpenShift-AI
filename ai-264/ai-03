@@ -1,4 +1,6 @@
 Inspecting Workbench Resources ( DS project > Work Beanch > Jupyter node book > right side 'clock icon' > click )
+Note: right side details is about your total cpu, mem, current utilization
+      Down side what ever is showing it is all about require cpu and memory to execute the notebook code.
   - CPU 
   - Memory
   - Kernel ID
@@ -56,6 +58,10 @@ learning models typically implies the use of incremental learning to make the mo
 Data scientists usually design deep learning training loops to iterate over data chunks, which are typically called batches in deep 
 learning scenarios. In fact, libraries such as TensorFlow and PyTorch offer routines and properties to quickly configure batches and 
 batch sizes.
+
+...........
+
+
 
 
 
