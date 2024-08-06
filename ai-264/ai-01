@@ -1,0 +1,64 @@
+Training ML Models.
+
+- NumPy Arrays
+- Data Exploration and Preprocessing
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Model Training with Scikit-learn
+- Model Training with PyTorch
+- Model Training with TensorFlow
+
+.....
+
+Additional Python Packages for Machine Learning
+
+- SciPy
+- Seaborn
+- Plotly
+- XGBoost
+- Transformers
+
+
+.....
+
+Machine Learning with Other Languages
+
+- R
+R is a language historically used in scientific research for statistical analysis, including machine learning. Popular R packages 
+for ML include Caret, TensorFlow for R, XGBoost, and Glmnet, among others.
+
+- Julia
+Julia is a relatively recent language. Created in 2012, it quickly gained traction in academia and research environments. 
+In these environments, Julia ML in data science is common and utilizes libraries such as MLJ.jl, Knet.jl and TensorFlow.js.
+
+- Java
+Traditionally, Java has been a common option for machine learning, especially before the popularization of Python. Noteworthy examples 
+of Java ML applications and libraries include Weka or OpenNLP.
+
+- JavaScript
+Although JavaScript has been historically used for web development, the popularity of Node.js has made JavaScript ubiquitous. The myriad 
+of JavaScript applications also includes machine learning. Libraries such as BrainJS and TensorFlowJS can train and run models directly 
+in a web browser.
+
+- MATLAB
+MATLAB is a classic tool for numerical computation in engineering and science. Rather than just a programming language, 
+MATLAB is a full-fledged platform that includes its own syntax and IDE. MATLAB is a proprietary solution, but you can find open 
+source alternatives such as GNU Octave.
+
+
+
+
+
+
+Most IMP point :
+
+
+Note: 
+If you wish to create machine learning models in RHOAI by using languages other than Python, then you must create a custom workbench. 
+Such a workbench should include a Kernel that can execute code in your language of choice. For example, to create a workbench for the 
+Julia language, you could create a workbench image that includes the IJulia kernel. With this image, you could create notebooks that 
+can run Julia code.
+
+
+
