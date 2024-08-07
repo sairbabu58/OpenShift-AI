@@ -66,6 +66,15 @@ batch sizes.
 Monitoring the Training Process:
 - Use TensorBoard to visualize the evaluation metrics of trained models.
 
+> Create a DS project
+> Create a workbeanch using 'tensorFlow' image
+> Execute the notebook file.
+
+
+.......
+
+
+
 
 
 
