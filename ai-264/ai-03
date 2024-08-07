@@ -63,6 +63,12 @@ batch sizes.
 
 
 
+Monitoring the Training Process:
+- Use TensorBoard to visualize the evaluation metrics of trained models.
+
+
+
+
 
 
 
