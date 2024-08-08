@@ -1,0 +1,46 @@
+(Follow the books AI267)
+
+- Introduction to Red Hat OpenShift AI
+- A Brief Introduction to Artificial Intelligence
+- Data Science
+
+- Machine Learning (ML)
+    > Traditional ML
+    > Deep learning 
+    > Reinforcement Learning (RL)
+- Deep Learning
+- Non-ML Techniques
+
+- RHOAI Key Features
+    > Jupyter notebooks
+    > Portable working environments
+    > GPU-ready environments
+    > Cloud-first Model Serving
+    > Pipelines
+    > Model monitoring
+
+- Architecture of Red Hat OpenShift AI
+    > Install operators list
+
+    > Workbenches
+    > Workbench images
+    > Cluster storage
+    > Data Connections
+    > Data Science Pipelines
+    > Model
+    > Model Serving
+
+- Model Monitoring
+- Open Data Hub
+
+- Machine Learning Workflow in RHOAI
+    > Ingest data
+    > Preprocess and explore data
+    > Train model
+    > Evaluate model
+    > Export and upload model
+    > Pipeline execution
+    > Serve model
+    > Monitor model
+    > Develop and deploy applications
+
