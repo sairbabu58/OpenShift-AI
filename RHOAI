@@ -1,3 +1,18 @@
 NVIDIA Operator Installation
 
 https://docs.nvidia.com/datacenter/cloud-native/openshift/latest/gpu-operator-with-precompiled-drivers.html
+
+
+.................................
+
+
+-> Configure GPU node in OpenShift AI:
+-> Work with GPU Nodes in OpenShift AI
+
+https://github.com/rh-aiservices-bu/accelerator-profiles-guide/tree/main?tab=readme-ov-file
+
+
+....................................
+
+
+
